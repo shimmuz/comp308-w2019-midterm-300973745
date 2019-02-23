@@ -12,4 +12,4 @@ let gamesSchema = mongoose.Schema({
   collection: "books"
 });
 
-module.exports = mongoose.model('books', gamesSchema);
+module.exports = mongoose.model('favourite', gamesSchema);
