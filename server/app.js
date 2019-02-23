@@ -1,3 +1,9 @@
+//      * File Name: app.js
+//      * Author Name: Shefali Sharma, 
+//      * StudentID: 300973745
+//      * Web App name: comp308-w2019-midterm-300973745
+     
+
 // moddules for node and express
 let createError = require('http-errors');
 let express = require('express');

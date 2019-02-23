@@ -1,3 +1,9 @@
+//      * File Name: books.js
+//      * Author Name: Shefali Sharma, 
+//      * StudentID: 300973745
+//      * Web App name: comp308-w2019-midterm-300973745
+
+
 // modules required for routing
 let express = require('express');
 let router = express.Router();

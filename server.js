@@ -1,3 +1,7 @@
+//      * File Name: server.js
+//      * Author Name: Shefali Sharma, 
+//      * StudentID: 300973745
+//      * Web App name: comp308-w2019-midterm-300973745
 let app = require('./server/app');
 let debug = require('debug')('comp308-w2019-midterm:server');
 let http = require('http');
