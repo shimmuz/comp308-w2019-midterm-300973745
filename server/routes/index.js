@@ -19,7 +19,7 @@ function requireAuth(req, res, next){
   console.log(req.user.username);
   //check if user is loged in
   if(!req.isAuthenticated()) {
-      return res.redirect('/login');
+      return res.redirect('/');
   }
  
   next();
@@ -42,7 +42,7 @@ router.get('/login',(req,res,next) => {
     });
     
   } else {
-    return res.redirect("/");  //redirects to home
+    return res.redirect('/');  //redirects to home
   }
 });
 
@@ -67,7 +67,7 @@ router.post('/login',(req,res,next)=>{
         return res.redirect('/books');
        
         });
-      })(req,res,next);
+      })
     });
    
 
@@ -80,7 +80,7 @@ router.get('/register',(req, res, next) => {
       displayName: req.user ? req.user.displayName : ""
     });
   } else {
-    return res.redirect("/");
+    return res.redirect('/');
   }
 });
 /* Pos --process the user registartion page*/
@@ -111,7 +111,7 @@ router.post('/register',(req, res, next) => {
 
       //redirect the user
       return passport.authenticate("local")(req, res, () => {
-        res.redirect("/books");
+        res.redirect('/books');
       });
     }
 
@@ -122,6 +122,6 @@ router.post('/register',(req, res, next) => {
 /* Get - perfrom usre logout */
 router.get('/logout',(req, res, next) => {
   req.logout();
-  res.redirect("/");
+  res.redirect('/');
 });
 module.exports = router;

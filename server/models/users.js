@@ -1,3 +1,8 @@
+//      * File Name: users.js
+//      * Author Name: Shefali Sharma, 
+//      * StudentID: 300973745
+//      * Web App name: comp308-w2019-midterm-300973745
+
 //require modules for user model
 let mongoose = require("mongoose");
 let passportLocalMongoose = require("passport-local-mongoose");
